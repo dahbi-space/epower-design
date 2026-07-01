@@ -1,8 +1,14 @@
 /* ==========================================================================
-   E-POWER MOTORS — HOMEPAGE STYLES
-   Ported from the Claude Design prototype ("E-Power Home").
-   Organized by section — comments match the section comments in index.html
-   so each block can be lifted independently into an Elementor custom-CSS box.
+   E-POWER MOTORS — HOMEPAGE STYLES (Elementor / WordPress build)
+   All classes and CSS custom properties are prefixed "ep-redesign-" so they
+   cannot collide with the active theme or other Elementor/plugin CSS.
+
+   INSTALL: paste this whole file into a WPCode "CSS Snippet" (Auto Insert,
+   Site Wide Header or Frontend) — see wordpress-elementor/README.md.
+   Comments below match wordpress-elementor/sections/*.html one-to-one, so
+   you can also lift a single section's rules into that section's own
+   Elementor "Custom CSS" panel (Elementor Pro) if you'd rather not load
+   this globally.
    ========================================================================== */
 
 /* ===================== TOKENS & RESET ===================== */

@@ -1,0 +1,54 @@
+<!-- ===================== CALCULATOR ===================== -->
+<section class="ep-redesign-calculator">
+  <div class="ep-redesign-container--narrow">
+    <div class="ep-redesign-calculator__head">
+      <div class="ep-redesign-eyebrow">Combien allez-vous économiser ?</div>
+      <h2>Calculateur d'économies E-Power</h2>
+    </div>
+    <div class="ep-redesign-calculator__panel">
+      <div class="ep-redesign-calculator__readout">
+        <div class="ep-redesign-calculator__readout-row">
+          <span class="ep-redesign-calculator__value" id="ep-redesign-km-value">40</span>
+          <span class="ep-redesign-calculator__unit">km / jour</span>
+        </div>
+        <div class="ep-redesign-calculator__hint">Faites glisser pour estimer votre trajet quotidien</div>
+      </div>
+
+      <input type="range" class="ep-redesign-calculator__slider" id="ep-redesign-km-slider" min="10" max="150" step="5" value="40" aria-label="Kilomètres parcourus par jour">
+      <div class="ep-redesign-calculator__scale"><span>10 km</span><span>80 km</span><span>150 km</span></div>
+
+      <div class="ep-redesign-calculator__grid">
+        <div class="ep-redesign-calc-card ep-redesign-calc-card--fuel">
+          <div class="ep-redesign-calc-card__head">
+            <span class="ep-redesign-calc-card__head-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15M3 21h14M15 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V9l-3-3"/></svg></span>
+            <div class="ep-redesign-calc-card__head-title">Scooter essence</div>
+          </div>
+          <div class="ep-redesign-calc-card__line"><span>Par mois</span><span class="ep-redesign-calc-card__amount" id="ep-redesign-ess-monthly">0 DH</span></div>
+          <div class="ep-redesign-calc-card__line"><span>Par an</span><span class="ep-redesign-calc-card__amount ep-redesign-calc-card__amount--warn" id="ep-redesign-ess-annual">0 DH</span></div>
+        </div>
+        <div class="ep-redesign-calc-card ep-redesign-calc-card--electric">
+          <div class="ep-redesign-calc-card__glow" aria-hidden="true"></div>
+          <div class="ep-redesign-calc-card__body">
+            <div class="ep-redesign-calc-card__head">
+              <span class="ep-redesign-calc-card__head-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 13.5h6.2L9 22l11-13.2h-6.4z"/></svg></span>
+              <div class="ep-redesign-calc-card__head-title">E-Power électrique</div>
+            </div>
+            <div class="ep-redesign-calc-card__line"><span>Par mois</span><span class="ep-redesign-calc-card__amount" id="ep-redesign-el-monthly">0 DH</span></div>
+            <div class="ep-redesign-calc-card__line"><span>Par an</span><span class="ep-redesign-calc-card__amount ep-redesign-calc-card__amount--accent" id="ep-redesign-el-annual">0 DH</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ep-redesign-calculator__result">
+        <div>
+          <div class="ep-redesign-calculator__result-label">Votre économie</div>
+          <div class="ep-redesign-calculator__result-sub">Soit <strong id="ep-redesign-save-pct">0%</strong> de carburant en moins</div>
+        </div>
+        <div class="ep-redesign-calculator__result-figure">
+          <div class="ep-redesign-calculator__result-amount"><span id="ep-redesign-save-annual">0 DH</span><span> /an</span></div>
+          <div class="ep-redesign-calculator__result-monthly"><span id="ep-redesign-save-monthly">0 DH</span> économisés chaque mois</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<!-- ===================== HEADER ===================== -->
+<!--
+  ℹ SITE CHROME, NOT PAGE CONTENT: this is your site-wide nav. Build it
+  once in Elementor Theme Builder (Templates → Theme Builder → Header)
+  rather than pasting it into a regular content page — see README.md §4.
+-->
+<header class="ep-redesign-header">
+  <div class="ep-redesign-header__bar ep-redesign-container">
+    <nav class="ep-redesign-header__nav" aria-label="Navigation principale">
+      <a href="#" class="is-active">Accueil</a>
+      <a href="#ep-redesign-models">Nos Modèles</a>
+      <a href="#">Qui sommes-nous</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <a href="#" class="ep-redesign-header__logo">
+      <span class="ep-redesign-header__logo-mark">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#0A0A0C" stroke="none" aria-hidden="true"><path d="M13 2 4 13.5h6.2L9 22l11-13.2h-6.4z"/></svg>
+      </span>
+      <span class="ep-redesign-header__logo-text">E-POWER</span>
+    </a>
+
+    <div class="ep-redesign-header__actions">
+      <button type="button" class="ep-redesign-icon-btn" aria-label="Mon compte">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+      </button>
+      <button type="button" class="ep-redesign-icon-btn" aria-label="Panier, 2 articles">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="ep-redesign-icon-btn__badge">2</span>
+      </button>
+      <button type="button" class="ep-redesign-burger" id="ep-redesign-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="ep-redesign-mobile-menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="ep-redesign-header__mobile-menu" id="ep-redesign-mobile-menu">
+    <div class="ep-redesign-header__mobile-menu-inner">
+      <a href="#" class="is-active">Accueil</a>
+      <a href="#ep-redesign-models">Nos Modèles</a>
+      <a href="#">Qui sommes-nous</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</header>

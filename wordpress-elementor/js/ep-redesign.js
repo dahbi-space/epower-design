@@ -1,8 +1,16 @@
 /* ==========================================================================
-   E-POWER MOTORS — HOMEPAGE INTERACTIONS
+   E-POWER MOTORS — HOMEPAGE INTERACTIONS (Elementor / WordPress build)
    Mobile nav toggle, image fallback, count-up stats, savings calculator.
-   Wrapped in an IIFE so nothing leaks onto window — safe to enqueue
-   alongside theme/plugin scripts via WPCode.
+   Plain vanilla JS, no build step, no dependencies. Wrapped in an IIFE so
+   nothing leaks onto window — safe to enqueue alongside theme/plugin
+   scripts and Elementor's own JS.
+
+   INSTALL: paste this whole file into a WPCode "JS Snippet", location
+   "Site Wide Footer" (Insert Method "Insert Before </body>" or Auto
+   Insert Footer) — see wordpress-elementor/README.md. All DOM hooks are
+   ID/data-attribute selectors scoped to the ep-redesign- namespace, so
+   this is safe to load on every page even if a given section isn't
+   present (each init function no-ops when its elements are missing).
    ========================================================================== */
 (function () {
 'use strict';
